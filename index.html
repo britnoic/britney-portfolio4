@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Britney Audrey Muntai's Network Computing student portfolio and projects.">
+  <title>Britney Audrey Muntai | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Britney's portfolio home">britney<span>♡</span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="siteNav">☰</button>
+    <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <button class="theme-toggle" id="themeToggle" type="button">🌙 Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h1>Hi, I'm <span>Britney Audrey Muntai.</span></h1>
+        <h2>Network Computing student · Curious mind · Work in progress</h2>
+        <p class="intro">I like learning how technology can make everyday tasks simpler. From planning a budget to organising bookings and keeping track of wildlife, these projects show the different problems I've explored throughout my studies.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my projects ↗</a><a class="button secondary" href="#contact">Say hello</a></div>
+        <button class="text-button" id="helloButton" type="button">A tiny welcome button ✿</button>
+        <p id="helloMessage" class="message" aria-live="polite"></p>
+      </div>
+      <aside class="hero-card" aria-label="A short portfolio introduction">
+        <div class="sticker" aria-hidden="true">✿</div><p class="card-label">CURRENT CHAPTER</p>
+        <h3>Learning, building, improving.</h3>
+        <p>Web development, system design and problem-solving — one project at a time.</p>
+        <div class="decorative-line"></div><p class="small-note">A collection of ideas and projects from my studies.</p>
+      </aside>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-heading"><p class="eyebrow">BEHIND THE SCREEN</p><h2>A little about me</h2></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm Britney, a Network Computing student. My coursework has introduced me to programming, databases, networking and the process of designing systems around real needs.</p>
+          <p>I enjoy projects that start with a simple question — “How could this be easier?” — and turn it into a practical idea. I'm still learning, so each project is a chance to practise, make mistakes, and understand the technology a little better.</p>
+          <p>This portfolio brings together a few of the ideas and systems I've explored during my studies.</p>
+        </div>
+        <div class="skills-card"><p class="card-label">TOOLS IN MY TOOLBOX</p><h3>Skills I'm developing</h3>
+          <div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Programming</span><span>Database concepts</span><span>System analysis</span><span>Networking</span></div>
+          <p class="small-note">These are learning areas, not a claim that I've mastered every skill.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-heading"><p class="eyebrow">IDEAS TURNED INTO PROJECTS</p><h2>Things I've worked on</h2>
+        <p>Each project explores a different everyday challenge. Choose a category to browse the collection.</p></div>
+      <div class="filter-buttons" role="group" aria-label="Filter projects by category">
+        <button class="filter-button active" data-filter="all" type="button" aria-pressed="true">All projects</button>
+        <button class="filter-button" data-filter="daily" type="button" aria-pressed="false">Everyday life</button>
+        <button class="filter-button" data-filter="community" type="button" aria-pressed="false">Community &amp; services</button>
+        <button class="filter-button" data-filter="planning" type="button" aria-pressed="false">Planning systems</button>
+      </div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="daily">
+          <div class="project-top"><span class="project-number">01</span><span class="project-icon" aria-hidden="true">🍓</span></div>
+          <p class="project-type">Personal finance · C programming</p><h3>MyBudgetBuddy</h3>
+          <p class="project-hook">A clearer picture of where the money goes.</p>
+          <p>MyBudgetBuddy is an expense-tracking program designed to help users record spending, organise purchases by category and review their weekly and monthly habits. It includes profile details, custom expense categories, payment-type tracking and summaries that compare spending with monthly salary.</p>
+          <div class="project-tags"><span>Expense tracking</span><span>Reports</span><span>File handling</span></div>
+          <p class="project-note"><strong>Project focus:</strong> turning individual transactions into useful spending summaries.</p>
+        </article>
+        <article class="project-card" data-category="daily">
+          <div class="project-top"><span class="project-number">02</span><span class="project-icon" aria-hidden="true">🍵</span></div>
+          <p class="project-type">Health &amp; wellness · System analysis</p><h3>Fitness and Wellness Tracking App</h3>
+          <p class="project-hook">Small habits, progress you can actually see.</p>
+          <p>This app concept brings fitness and everyday well-being into one place. Users can log workouts, track meals and hydration, set personal goals and follow their progress over time. Reminders and access to fitness professionals can help make healthy routines feel more manageable.</p>
+          <div class="project-tags"><span>Activity logging</span><span>Goal setting</span><span>Progress tracking</span></div>
+          <p class="project-note"><strong>Project focus:</strong> supporting healthier routines through organised tracking and feedback.</p>
+        </article>
+        <article class="project-card" data-category="community">
+          <div class="project-top"><span class="project-number">03</span><span class="project-icon" aria-hidden="true">🌱</span></div>
+          <p class="project-type">Agriculture · Object-oriented design</p><h3>DirectFarm Samarahan System</h3>
+          <p class="project-hook">Helping local produce find its way to buyers.</p>
+          <p>DirectFarm Samarahan explores a more organised way to connect farmers and buyers. The system models the journey from produce listings and orders to packing, delivery and payment-related records, helping make the different roles and steps easier to manage.</p>
+          <div class="project-tags"><span>Orders</span><span>Delivery workflow</span><span>System modelling</span></div>
+          <p class="project-note"><strong>Project focus:</strong> connecting the people and steps involved in getting produce to customers.</p>
+        </article>
+        <article class="project-card" data-category="community">
+          <div class="project-top"><span class="project-number">04</span><span class="project-icon" aria-hidden="true">🦧</span></div>
+          <p class="project-type">Conservation · C programming</p><h3>Wildlife Tracking and Reporting System</h3>
+          <p class="project-hook">Turning wildlife observations into information worth acting on.</p>
+          <p>The Wildlife Tracking and Reporting System is designed to help conservation teams keep species records and log sightings with details such as location, date, time and observed behaviour. It can summarise sightings and highlight species that may need more attention based on population status and sighting patterns.</p>
+          <div class="project-tags"><span>Species records</span><span>Sighting logs</span><span>Priority reports</span></div>
+          <p class="project-note"><strong>Project focus:</strong> organising field observations so they can support conservation planning.</p>
+        </article>
+        <article class="project-card" data-category="planning">
+          <div class="project-top"><span class="project-number">05</span><span class="project-icon" aria-hidden="true">🗓️</span></div>
+          <p class="project-type">Room reservations · System analysis</p><h3>Room Booking System</h3>
+          <p class="project-hook">Less booking confusion, more time for the event itself.</p>
+          <p>This proposed web-based system addresses the challenges of manually booking shared rooms, including misplaced records and overlapping reservations. Users can check room availability, save booking details and send feedback about room facilities, helping staff manage spaces more clearly.</p>
+          <div class="project-tags"><span>Availability checking</span><span>Reservations</span><span>User feedback</span></div>
+          <p class="project-note"><strong>Project focus:</strong> making shared-room booking and facility reporting easier to follow.</p>
+        </article>
+      </div>
+      <p id="filterMessage" class="filter-message" aria-live="polite">Showing all 5 projects.</p>
+      <p class="small-note">Project descriptions are based on the assignment briefs available for these projects. Please adjust them if your actual implementation or personal contribution was different.</p>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-heading"><p class="eyebrow">YOUR TURN TO SAY HI</p><h2>Let's connect.</h2>
+        <p>Have a question or want to talk about a project? Email is the easiest way to reach me.</p></div>
+      <div class="contact-card"><div class="contact-icon" aria-hidden="true">✉</div>
+        <div class="contact-details"><p class="card-label">SEND ME AN EMAIL</p><a class="email-link" href="mailto:98373@siswa.unimas.my">98373@siswa.unimas.my</a>
+          <p class="small-note">Click the address to open your email app, or copy it with the button.</p></div>
+        <button class="button primary" id="copyEmailButton" type="button">Copy email</button>
+      </div>
+      <p id="contactMessage" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer class="site-footer"><p>Made with ♡ by Britney Audrey Muntai · <span id="currentYear"></span></p><a href="#home">Back to the top ↑</a></footer>
+</body>
+</html>
